@@ -1,0 +1,160 @@
+/*body背景图，待定*/
+
+
+/*body {
+    background: url(../frontImage/bodybackground.jpg) no-repeat 0 0 /cover;
+}*/
+
+
+/*导航区*/
+
+.loginNav {
+    position: absolute;
+    left: 25%
+}
+
+.registerNav {
+    position: absolute;
+    left: 26%
+}
+
+.searchNav {
+    position: absolute;
+    left: 35%
+}
+
+.userNav {
+    position: absolute;
+    left: 40%
+}
+
+
+/*轮播区*/
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.carouselContent {
+    position: relative;
+    width: 1200px;
+    height: 334px;
+    margin: 20px auto 0;
+}
+
+.imglist {
+    width: 1200px;
+    height: 303px;
+}
+
+.line {
+    width: 1200px;
+    height: 31px;
+    text-align: center;
+}
+
+.btnleft,
+.btnright {
+    position: absolute;
+    top: 160px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+}
+
+.btnleft {
+    left: 0;
+}
+
+.btnright {
+    right: 0
+}
+
+.imglist>ul {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.imglist>ul>li {
+    position: absolute;
+    width: 658px;
+    height: 303px;
+    transition: 0.5s;
+}
+
+.ilist1 {
+    transform: scale(0.75);
+    transform-origin: 0% 75%;
+    z-index: 1;
+}
+
+.ilist2 {
+    transform: translateX(271px);
+    transform-origin: 0% 75%;
+    z-index: 2;
+}
+
+.ilist3 {
+    transform: translateX(708px) scale(0.75);
+    transform-origin: 100% 75%;
+    z-index: 1;
+}
+
+.ilist4 {
+    transform: translateX(1061px) scale(0.75);
+    transform-origin: 100% 75%;
+    z-index: 0.5;
+}
+
+.ilist5 {
+    transform: translateX(1414px) scale(0.75);
+    transform-origin: 100% 75%;
+    z-index: 0.5;
+}
+
+.ilist6 {
+    transform: translateX(1767px) scale(0.75);
+    transform-origin: 100% 75%;
+    z-index: 0.5;
+}
+
+.line>span {
+    display: inline-block;
+    width: 35px;
+    height: 3px;
+    background-color: #cccccc;
+}
+
+
+/*底部播放区*/
+
+.back1 {
+    background: url(frontImage/cnf2.jpg);
+    background-size: cover;
+    ;
+    background-repeat: no-repeat;
+}
+
+audio {
+    display: block;
+    width: 100%;
+}
+
+.fix {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .5);
+    right: 0;
+    text-align: center;
+    font-size: 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="layui/layui.all.js"></script>
+    <script type="text/javascript" src="layui/layui.js"></script>
+</head>
+
+<body>
+    <div class="layui-container">
+        <div class="layui-form-item layui-row layui-col-space10">
+            <h3>用户注册</h3>
+        </div>
+        <form class="layui-form">
+            <div class="layui-form-item">
+                <input type="hidden" id="type" name="type" value="login">
+            </div>
+            <div class="layui-form-item layui-row layui-col-space10">
+                <label class="layui-form-label layui-col-md2">用户名</label>
+                <div class="layui-input-block layui-col-md3">
+                    <input class="layui-input" type="text" name="uname" id="uname" lay-verify="required" placeholder="请输入用户名" autocomplete="off">
+                </div>
+            </div>
+            <div class="layui-form-item layui-row layui-col-space10">
+                <label class="layui-form-label layui-col-md2">密码</label>
+                <div class="layui-input-block layui-col-md3">
+                    <input class="layui-input" type="password" name="password" id="password" lay-verify="required" placeholder="请输入密码" autocomplete="off">
+                </div>
+            </div>
+            <div class="layui-form-item layui-row layui-col-space10">
+                <label class="layui-form-label layui-col-md2">确认密码</label>
+                <div class="layui-input-block layui-col-md3">
+                    <input class="layui-input" type="password" name="password" id="password" lay-verify="required" placeholder="确认密码" autocomplete="off">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

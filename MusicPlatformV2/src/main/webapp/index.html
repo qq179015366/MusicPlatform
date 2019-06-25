@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="layui/css/layui.css" />
+    <link rel="stylesheet" href="css/customNetMusic.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="layui/layui.all.js"></script>
+    <script type="text/javascript" src="layui/layui.js"></script>
+
+</head>
+
+<body>
+    <ul class="layui-nav">
+        <li class="layui-nav-item loginNav">
+            <a>
+                <button id="loginNav" class="layui-btn layui-btn-normal">
+                    <i class="layui-icon layui-icon-username"></i>登录
+                </button>
+            </a>
+        </li>
+        <li class="layui-nav-item registerNav">
+            <a>
+                <button id="registerNav" class="layui-btn layui-btn-normal">
+                    <i class="layui-icon layui-icon-username"></i>注册</span>
+                </button>
+            </a>
+        </li>
+        <li class="layui-nav-item searchNav"><input class="form-control" type="text" placeholder="搜索.."></li>
+        <li class="layui-nav-item  userNav">
+            <a href=""><img src="frontImage/cnf1.jpg" class="layui-nav-img">我</a>
+            <dl class="layui-nav-child">
+                <dd>
+                    <a href="javascript:;">修改信息</a>
+                </dd>
+                <dd>
+                    <a href="javascript:;">消息<span class="layui-badge layui-bg-orange">5</span></a>
+                </dd>
+                <dd>
+                    <a href="javascript:;">管理</a>
+                </dd>
+                <dd>
+                    <a href="javascript:;">退出</a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <div class="layui-container">
+        <!--轮播区域-->
+        <div class="layui-row layui-col-space10">
+            <div class="carouselContent">
+                <div class="imglist">
+                    <ul>
+                        <li class="ilist1"><img src="frontImage/lb1.jpg"></li>
+                        <li class="ilist2"><img src="frontImage/lb2.jpg"></li>
+                        <li class="ilist3"><img src="frontImage/lb3.jpg"></li>
+                        <li class="ilist4"><img src="frontImage/lb4.jpg"></li>
+                        <li class="ilist5"><img src="frontImage/lb5.jpg"></li>
+                        <li class="ilist6"><img src="frontImage/lb6.jpg"></li>
+                    </ul>
+                </div>
+                <div class="line">
+                    <span name="carouselLine"></span>
+                    <span name="carouselLine"></span>
+                    <span name="carouselLine"></span>
+                    <span name="carouselLine"></span>
+                    <span name="carouselLine"></span>
+                    <span name="carouselLine"></span>
+                </div>
+                <div class="btnleft" id="btnleft">&lt;</div>
+                <div class="btnright" id="btnright">&gt;</div>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-md4">
+                <table id="MusicList_tb" lay-filter="tbf"></table>
+            </div>
+            <div class="layui-col-md6">
+                <div class="layui-tab">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">单曲</li>
+                        <li>歌单</li>
+                        <li>歌手</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <!-- 按单曲歌名查询的音乐数据表-->
+                            <table id="Music_tb_single" lay-filter="tbf"></table>
+                        </div>
+                        <div class="layui-tab-item">
+                            <!-- 按歌单名查询的音乐数据表-->
+                            <table id="Music_tb_list" lay-filter="tbf"></table>
+                        </div>
+                        <div class="layui-tab-item">
+                            <!-- 按歌手查询的音乐数据表-->
+                            <table id="Music_tb_singer" lay-filter="tbf"></table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layui-col-md2">
+                <!--用户块？待商定-->
+                <!--<table id="User_div" lay-filter="tbf"></table>-->
+            </div>
+        </div>
+
+        <div class="fix">
+            <audio controls autoplay="autoplay">
+			<source src="何子天 - 何须问 - 阿卡贝拉（Cover：郭好为）.mp3" />
+		</audio>
+        </div>
+    </div>
+</body>
+<!--layui界面js-->
+<script type="text/javascript" src="js/dataProcessing.js"></script>
+<!--轮播动画js-->
+<script type="text/javascript" src="js/customNetMusic.js"></script>
+
+</html>
